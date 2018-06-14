@@ -4,6 +4,7 @@ pipeline:
     commands:
       - npm install
       - npm start
-  test:
+      - npm stop
+  coverage:
     image: node:latest
-    commands: npm run test
+    commands: npm run coverage
